@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  /* background-color: #b5c5cf; */
+  /* scroll-behavior: smooth; */
+}
+P {
+  font-size: 15px;
+}
+
+body,
+html {
+  /* width: 100%;
+  height: 100%; */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* <<<<<<<<<<<< header>>>>>>>>>>>> */
+.shutter {
+  margin: 2em;
+  font-size: 25px;
+  text-align: center;
+  color: red;
+}
+
+/* <<<<<<<<<<<<<<<< forms>>>>>>>>>>>>>>>> */
+
+/* <<<<<<<<<<<<<<button>>>>>>>>>>>>>> */
+.services {
+  background-color: #eeeeee;
+  min-height: 100vh;
+  width: 100%;
+  float: left;
+  padding: 100px 0;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+.services .heading {
+  margin-bottom: 60px;
+  width: 100%;
+  float: left;
+}
+.services .heading h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #000000;
+  margin: 0;
+}
+
+.services .content {
+  float: left;
+  width: 100%;
+}
+.services .content .box {
+  width: 33.33%;
+  float: left;
+  padding: 15px;
+}
+.services .content .box .inner {
+  padding: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.services .content .box .inner::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  box-sizing: border-box;
+  height: 0;
+  border-bottom: 3px solid transparent;
+  border-left: 3px solid transparent;
+  transition: all 0.8s ease;
+}
+.services .content .box .inner::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+  box-sizing: border-box;
+  height: 0;
+  border-top: 3px solid transparent;
+  border-right: 3px solid transparent;
+  transition: all 0.8s ease;
+}
+.services .content .box:hover .inner::after,
+.services .content .box:hover .inner::before {
+  border-color: red;
+  width: 100%;
+  height: 100%;
+}
+.services .content .box .inner .icon {
+  font-size: 50px;
+  color: #000;
+  transition: color 0.8s ease;
+}
+.services .content .box:hover .inner .icon {
+  color: red;
+}
+.services .content .box .inner h3 {
+  font-size: 20px;
+  font-weight: normal;
+  color: #000;
+  margin: 20px 0;
+}
+
+.services .content .box .inner p {
+  font-size: 15px;
+  color: #444444;
+  line-height: 24px;
+}
+
+/* <<<<<<<<<<<<<< free>>>>>>>>>>>>>>>>>> */
+.hero-style {
+  background-color: rosybrown;
+  min-height: 50px;
+  width: 100%;
+  float: left;
+  padding: 100px;
+}
+.haryan-head {
+  text-align: center;
+}
+
+.the-style .bindass {
+  width: 33%;
+  float: left;
+  padding: 15px;
+}
+
+.the-style .bindass .jain {
+  position: relative;
+  padding: 30px;
+}
+
+.the-style .bindass .jain::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  border-bottom: 3px solid transparent;
+  border-left: 3px solid transparent;
+  transition: all 0.8s ease;
+}
+
+/* .the-style .bindass:hover .jain::before {
+  border-color: rgb(100, 100, 1);
+  width: 0%;
+  height: 0%;
+} */
+
+.the-style .bindass .jain::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 0;
+
+  border-right: 280px solid transparent;
+  transition: all 0.8s ease;
+  margin-left: -20em;
+}
+
+.the-style .bindass:hover .jain::after {
+  border-color: rgb(228, 233, 250);
+  width: 0%;
+  height: 105%;
+  opacity: 0.7;
+}
